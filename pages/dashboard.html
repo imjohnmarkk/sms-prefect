@@ -1,14 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/css/style.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Dashboard</title>
 </head>
+
 <body>
-    
+    <div class="dashboard-container">
+
+        <nav>
+            <div class="navbar">
+
+                <div class="navbar-content">
+
+                    <div class="close-btn"><span class="material-symbols-outlined">menu</span></div>
+
+                    <div class="open-btn"><span class="material-symbols-outlined">menu</span></div>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar">
+
+                <div class="sidebar-content">
+                    <div class="sidebar-logo">
+                        <a href="#"><img src="../images/logo.png" alt="Logo"> <strong><span>PREFECT</span></strong> </a>
+                    </div>
+                    <hr>
+                    <div class="submodule">
+                        <ul>
+                            <li class="item" onclick="toggleActive(this)">Dashboard</li>
+
+                            <li class="item" onclick="toggleActive(this)">Student Discipline
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </li>
+                            <ul class="sub-item">
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Behavioral Management</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Conflict Resolution</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Rule Enforcement</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Counseling</a></li>
+                            </ul>
+
+                            <li class="item" onclick="toggleActive(this)">Classroom Monitoring
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </li>
+                            <ul class="sub-item">
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Attendance</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Classroom Behavior</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Teacher Support</a></li>
+                            </ul>
+
+                            <li class="item" onclick="toggleActive(this)">School Events and Activities
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </li>
+                            <ul class="sub-item">
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Event Supervision</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Activity Participation</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Security</a></li>
+                            </ul>
+
+                            <li class="item" onclick="toggleActive(this)">Communication and Collaboration
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </li>
+                            <ul class="sub-item">
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Parent Communication</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Staff Collaboration</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Student Engagement</a></li>
+                            </ul>
+
+                            <li class="item" onclick="toggleActive(this)">Crisis Management
+                                <span class="material-symbols-outlined">
+                                    chevron_right</span>
+                            </li>
+                            <ul class="sub-item">
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Emergency Response</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Conflict Mediation/a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Policy Development</a></li>
+                            </ul>
+
+                            <li class="item" onclick="toggleActive(this)">Training and Education
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </li>
+                            <ul class="sub-item">
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Student Workshops</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Staff Training</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Peer Mentoring</a></li>
+                            </ul>
+
+                            <li class="item" onclick="toggleActive(this)">Record Keeping and Reporting
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </li>
+                            <ul class="sub-item">
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Incident Reports</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Progress Tracking</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Data Analysis</a></li>
+                            </ul>
+
+                            <li class="item" onclick="toggleActive(this)">Positive Reinforcement
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </li>
+                            <ul class="sub-item">
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Recognition Programs</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Character Education</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="#">Community Engagement</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <div class="dashboard-content">
+
+            <h1>Mga may ambag</h1>
+            <ul>
+                <li>Design</li>
+                <ul>
+                    <li>Danica</li>
+                </ul>
+                <li>Yun lang</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="../scripts/main.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
+
 </html>

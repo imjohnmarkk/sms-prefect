@@ -1,0 +1,35 @@
+PREFECT 
+
+* Student Discipline:
+    * Behavioral Management: Addressing behavioral issues among students.
+    * Conflict Resolution: Resolving conflicts and disputes among students.
+    * Rule Enforcement: Ensuring students adhere to school rules and regulations.
+    * Counseling: Providing guidance and counseling to students facing disciplinary issues.
+* 		Classroom Monitoring:
+    * Attendance: Monitoring student attendance and addressing absenteeism.
+    * Classroom Behavior: Observing classroom behavior and addressing disruptions.
+    * Teacher Support: Assisting teachers in managing classroom discipline.
+* 		School Events and Activities:
+    * Event Supervision: Overseeing school events to ensure discipline and order.
+    * Activity Participation: Encouraging student participation in extracurricular activities.
+    * Security: Ensuring the safety and security of students during events and activities.
+* 		Communication and Collaboration:
+    * Parent Communication: Communicating disciplinary issues to parents/guardians.
+    * Staff Collaboration: Collaborating with teachers and staff to address disciplinary concerns.
+    * Student Engagement: Engaging with students to promote positive behavior and attitudes.
+* 		Crisis Management:
+    * Emergency Response: Coordinating responses during emergencies or crisis situations.
+    * Conflict Mediation: Mediating conflicts between students or staff members.
+    * Policy Development: Contributing to the development of school discipline policies.
+* 		Training and Education:
+    * Student Workshops: Conducting workshops to educate students about discipline and behavior.
+    * Staff Training: Training teachers and staff on effective discipline techniques.
+    * Peer Mentoring: Implementing peer mentoring programs to promote positive behavior among students.
+* 		Record Keeping and Reporting:
+    * Incident Reports: Documenting disciplinary incidents and actions taken.
+    * Progress Tracking: Monitoring the progress of students who have faced disciplinary actions.
+    * Data Analysis: Analyzing disciplinary data to identify trends and develop strategies for improvement.
+* 		Positive Reinforcement:
+    * Recognition Programs: Implementing programs to recognize and reward positive behavior.
+    * Character Education: Promoting character education initiatives to instill positive values in students.
+    * Community Engagement: Involving the community in reinforcing positive behavior among students.

@@ -1,15 +1,17 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
-.btn-login {
-    background: white;
-    outline: none;
-    border: none;
-    padding: 2px 20px;
-    width: 200px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+.close-btn span {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.close-btn, .open-btn {
+    margin: 0 0 0 10px;
+}
+
+.open-btn {
+  display: none;
+}
+
+.open-btn span {
+  font-size: 35px;
+  cursor: pointer;
 }
