@@ -1,3 +1,5 @@
+@use "../themes/default" as *;
+
 .close-btn span {
   font-size: 35px;
   cursor: pointer;
@@ -14,4 +16,18 @@
 .open-btn span {
   font-size: 35px;
   cursor: pointer;
+}
+
+.login-btn button {
+  border: none;
+  outline: none;
+  background: $primary-blue;
+  color: white;
+  width: 150px;
+  padding: 5px 8px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
 }

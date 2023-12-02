@@ -18,29 +18,6 @@ openBtn.addEventListener("click", () => {
   openBtn.style.display = "none";
 });
 
-// function toggleActive(element) {
-//   // Toggle 'active' class on the clicked item
-//   element.classList.toggle("active");
-
-//   // Toggle 'down' class on the chevron within the clicked item
-//   const chevron = element.querySelector(".material-symbols-outlined");
-//   if (chevron) {
-//     chevron.classList.toggle("down");
-//   }
-
-//   // Remove 'active' class and 'down' class from other list items
-//   const listItems = document.querySelectorAll("ul li");
-//   listItems.forEach(function (li) {
-//     if (li !== element && li.classList.contains("active")) {
-//       li.classList.remove("active");
-//       const otherChevron = li.querySelector(".material-symbols-outlined");
-//       if (otherChevron) {
-//         otherChevron.classList.remove("down");
-//       }
-//     }
-//   });
-// }
-
 function toggleActive(element) {
   element.classList.toggle("active");
 
@@ -69,27 +46,6 @@ function toggleActive(element) {
     }
   });
 }
-
-// function toggleActiveSubitem(element) {
-//     const subitem = document.querySelectorAll('.subitem ul li a');
-
-//     subitem.forEach(function (a){
-//         a.classList.remove('active');
-//     });
-
-//     element.classList.add('active');
-// }
-
-// function toggleActiveSubitem(element) {
-//   // Remove the 'active' class from all sub-items
-//   const subitems = document.querySelectorAll(".sub-item li a");
-//   subitems.forEach(function (item) {
-//     item.classList.remove("active");
-//   });
-
-//   // Add the 'active' class to the clicked sub-item's anchor tag
-//   element.querySelector("a").classList.add("active");
-// }
 
 function toggleActiveSubitem(element) {
   // Remove the active class from all list items

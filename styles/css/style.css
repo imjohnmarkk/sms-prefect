@@ -338,6 +338,12 @@ a:hover, a:active, a:focus, a:focus-within {
   text-decoration: underline;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -414,6 +420,225 @@ body {
 .open-btn span {
   font-size: 35px;
   cursor: pointer;
+}
+
+.login-btn button {
+  border: none;
+  outline: none;
+  background: #0560FD;
+  color: white;
+  width: 150px;
+  padding: 5px 8px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+
+.main-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #323954;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.main-login-container .main-login-content {
+  height: 60%;
+  width: 60%;
+  background: #5a77df;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+
+.login-container {
+  position: absolute;
+  left: 100px;
+  height: 700px;
+  width: 500px;
+  background: #f9f9f9;
+  z-index: 3;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+
+.login-container form {
+  position: relative;
+}
+
+.login-container form h1 {
+  position: absolute;
+  top: -10px;
+  left: 60px;
+  font-family: "Vina Sans", sans-serif;
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+
+.login-container form h2 {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.login-container .login {
+  margin: 100px 0 0 0;
+}
+
+.login-container div.username label,
+.login-container div.password label {
+  margin: 0 0 5px 10px;
+}
+
+.username,
+.password {
+  margin: 15px 0;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  width: 300px;
+  padding: 4px 4px 4px 30px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+.input-container input:focus {
+  border: none;
+  outline: 1px solid #87C4FF;
+}
+
+.fa-user,
+.fa-lock {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.remember__forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -10px 10px 15px 10px;
+  font-size: 14px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+}
+
+.remember input {
+  margin: 0 3px 0 0;
+}
+
+.remember__forgot a {
+  text-decoration: none;
+}
+
+.logo-container {
+  height: 100%;
+  width: 45%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-container img {
+  height: 300px;
+  width: 300px;
+  margin: 0 40px 0 0;
+}
+
+.tagline {
+  color: white;
+  margin: 0 50px;
+}
+
+.circle__1 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #ee7214;
+  bottom: -200px;
+  left: -300px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.circle__2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #3081d0;
+  top: 30px;
+  right: 200px;
+  z-index: 2;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.circle__3 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #87c4ff;
+  top: 500px;
+  right: 700px;
+  z-index: 2;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.square__1 {
+  height: 100px;
+  width: 300px;
+  background: #0174be;
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 50px;
+  transform: rotate(-50deg) skew(112deg);
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  -webkit-transform: rotate(-50deg) skew(112deg);
+  -moz-transform: rotate(-50deg) skew(112deg);
+  -ms-transform: rotate(-50deg) skew(112deg);
+  -o-transform: rotate(-50deg) skew(112deg);
 }
 
 .dashboard-container {
