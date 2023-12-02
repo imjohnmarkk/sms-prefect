@@ -4,11 +4,16 @@
   background: #ECF5FC;
   height: 100vh;
   margin: 0 0 0 300px;
+  overflow-y: scroll;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .navbar {
@@ -64,7 +69,7 @@
 }
 
 .submodule {
-  font-weight: 700;
+  font-weight: 520;
   color: #808693;
 }
 
@@ -96,6 +101,14 @@
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
   }
+}
+
+.submodule .item a {
+  text-decoration: none;
+  color: #808693;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .submodule ul .item.active {
