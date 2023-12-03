@@ -11,7 +11,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
   const usernameValue = username.value;
   const passwordValue = password.value;
 
-  if (admins[usernameValue] === password) {
+  if (admins[usernameValue] === passwordValue) {
     window.location.href = "./pages/dashboard.html";
   } else {
     alert("Wrong username or password");
