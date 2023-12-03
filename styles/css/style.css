@@ -748,6 +748,9 @@ body {
   width: 100%;
   height: 100%;
 }
+.submodule .item a:hover {
+  color: white;
+}
 
 .submodule ul .item.active {
   background: #0560FD;

@@ -79,7 +79,8 @@
                             <ul class="sub-item">
                                 <li onclick="toggleActiveSubitem(this)"><a href="./parent-communication.html">Parent
                                         Communication</a></li>
-                                <li onclick="toggleActiveSubitem(this)"><a href="#">Staff Collaboration</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="./staff-collaboration.html">Staff
+                                        Collaboration</a></li>
                                 <li onclick="toggleActiveSubitem(this)"><a href="./student-engagement.html">Student
                                         Engagement</a></li>
                             </ul>
@@ -142,228 +143,232 @@
 
         <div class="dashboard-content">
 
-            <!-- Conflict Resolution Data -->
-            <div class="container mt-5">
-                <h2>Conflict Resolution Incidents</h2>
-                <div class="accordion" id="conflictResolutionAccordion">
+            <!-- Conflict Resolution Records -->
+            <div class="card">
+                <h2 class="card-title text-center mt-3">Conflict Resolution</h2>
+                <div class="card-body">
 
-                    <!-- Incident 1 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="conflictResolutionHeading1">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#conflictResolutionCollapse1" aria-expanded="true"
-                                aria-controls="conflictResolutionCollapse1">
-                                Incident #1 - Verbal Dispute
-                            </button>
-                        </h2>
-                        <div id="conflictResolutionCollapse1" class="accordion-collapse collapse show"
-                            aria-labelledby="conflictResolutionHeading1" data-bs-parent="#conflictResolutionAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Date:</strong> January 15, 2023</p>
-                                <p><strong>Students:</strong> Alice Johnson, Bob Davis</p>
-                                <p><strong>Nature of Conflict:</strong> Verbal dispute during group project.</p>
-                                <p><strong>Resolution:</strong> Mediation session, apology, and collaborative project
-                                    planning.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Conflict Description</th>
+                                <th scope="col">Students Involved</th>
+                                <th scope="col">Resolution Method</th>
+                                <th scope="col">Mediator</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Conflict Resolution Record 1 -->
+                            <tr>
+                                <td>1</td>
+                                <td>2023-05-01</td>
+                                <td>Argument over Classroom Seat</td>
+                                <td>John Doe, Jane Smith</td>
+                                <td>Mediation Session</td>
+                                <td>Ms. Johnson</td>
+                            </tr>
 
-                    <!-- Incident 2 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="conflictResolutionHeading2">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#conflictResolutionCollapse2" aria-expanded="false"
-                                aria-controls="conflictResolutionCollapse2">
-                                Incident #2 - Physical Altercation
-                            </button>
-                        </h2>
-                        <div id="conflictResolutionCollapse2" class="accordion-collapse collapse"
-                            aria-labelledby="conflictResolutionHeading2" data-bs-parent="#conflictResolutionAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Date:</strong> February 8, 2023</p>
-                                <p><strong>Students:</strong> Chris Wilson, Emma Turner</p>
-                                <p><strong>Nature of Conflict:</strong> Physical altercation in the hallway.</p>
-                                <p><strong>Resolution:</strong> Conflict mediation, counseling, and a joint community
-                                    service project.</p>
-                            </div>
-                        </div>
-                    </div>
+                            <!-- Conflict Resolution Record 2 -->
+                            <tr>
+                                <td>2</td>
+                                <td>2023-07-15</td>
+                                <td>Disagreement in Group Project</td>
+                                <td>Alice Brown, Mark Johnson</td>
+                                <td>Peer Mediation</td>
+                                <td>Mr. Hernandez</td>
+                            </tr>
 
-                    <!-- Incident 3 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="conflictResolutionHeading3">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#conflictResolutionCollapse3" aria-expanded="false"
-                                aria-controls="conflictResolutionCollapse3">
-                                Incident #3 - Disagreement in Team Project
-                            </button>
-                        </h2>
-                        <div id="conflictResolutionCollapse3" class="accordion-collapse collapse"
-                            aria-labelledby="conflictResolutionHeading3" data-bs-parent="#conflictResolutionAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Date:</strong> March 5, 2023</p>
-                                <p><strong>Students:</strong> Michael Turner, Sarah Clark</p>
-                                <p><strong>Nature of Conflict:</strong> Disagreement on project approach and
-                                    responsibilities.</p>
-                                <p><strong>Resolution:</strong> Facilitated discussion, revised project plan, and
-                                    collaboration workshop.</p>
-                            </div>
-                        </div>
-                    </div>
+                            <!-- Conflict Resolution Record 3 -->
+                            <tr>
+                                <td>3</td>
+                                <td>2023-09-01</td>
+                                <td>Misunderstanding between Friends</td>
+                                <td>Sarah White, Robert Miller</td>
+                                <td>Conflict Resolution Workshop</td>
+                                <td>Ms. Davis</td>
+                            </tr>
 
-                    <!-- Incident 4 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="conflictResolutionHeading4">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#conflictResolutionCollapse4" aria-expanded="false"
-                                aria-controls="conflictResolutionCollapse4">
-                                Incident #4 - Miscommunication in Group Assignment
-                            </button>
-                        </h2>
-                        <div id="conflictResolutionCollapse4" class="accordion-collapse collapse"
-                            aria-labelledby="conflictResolutionHeading4" data-bs-parent="#conflictResolutionAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Date:</strong> April 12, 2023</p>
-                                <p><strong>Students:</strong> Ryan Miller, Olivia Harris</p>
-                                <p><strong>Nature of Conflict:</strong> Misunderstanding of roles in a group assignment.
-                                </p>
-                                <p><strong>Resolution:</strong> Clear communication guidelines, revised roles, and
-                                    team-building activity.</p>
-                            </div>
-                        </div>
-                    </div>
+                            <!-- Conflict Resolution Record 4 -->
+                            <tr>
+                                <td>4</td>
+                                <td>2024-01-15</td>
+                                <td>Bullying Incident</td>
+                                <td>Michael Turner, Emily Davis</td>
+                                <td>Teacher Intervention</td>
+                                <td>Mr. Thompson</td>
+                            </tr>
 
-                    <!-- Incident 5 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="conflictResolutionHeading5">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#conflictResolutionCollapse5" aria-expanded="false"
-                                aria-controls="conflictResolutionCollapse5">
-                                Incident #5 - Sibling Conflict
-                            </button>
-                        </h2>
-                        <div id="conflictResolutionCollapse5" class="accordion-collapse collapse"
-                            aria-labelledby="conflictResolutionHeading5" data-bs-parent="#conflictResolutionAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Date:</strong> May 20, 2023</p>
-                                <p><strong>Students:</strong> Megan Johnson, Ethan Johnson</p>
-                                <p><strong>Nature of Conflict:</strong> Sibling rivalry and disagreement at school.</p>
-                                <p><strong>Resolution:</strong> Family counseling, conflict resolution workshop, and
-                                    joint activities.</p>
-                            </div>
-                        </div>
-                    </div>
+                            <!-- Conflict Resolution Record 5 -->
+                            <tr>
+                                <td>5</td>
+                                <td>2024-03-01</td>
+                                <td>Dispute over Extracurricular Activity</td>
+                                <td>Nathan Harris, Olivia Robinson</td>
+                                <td>Guidance Counseling</td>
+                                <td>Ms. Martinez</td>
+                            </tr>
 
-                    <!-- Incident 6 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="conflictResolutionHeading6">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#conflictResolutionCollapse6" aria-expanded="false"
-                                aria-controls="conflictResolutionCollapse6">
-                                Incident #6 - Dispute over Club Leadership
-                            </button>
-                        </h2>
-                        <div id="conflictResolutionCollapse6" class="accordion-collapse collapse"
-                            aria-labelledby="conflictResolutionHeading6" data-bs-parent="#conflictResolutionAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Date:</strong> June 8, 2023</p>
-                                <p><strong>Students:</strong> Aiden Thompson, Lily Turner</p>
-                                <p><strong>Nature of Conflict:</strong> Disagreement over leadership roles in a school
-                                    club.</p>
-                                <p><strong>Resolution:</strong> Mediation, role clarification, and team-building
-                                    session.</p>
-                            </div>
-                        </div>
-                    </div>
+                            <!-- Continue adding rows for more conflict resolution records -->
+                            <!-- Conflict Resolution Record 6 -->
+                            <tr>
+                                <td>6</td>
+                                <td>2024-05-15</td>
+                                <td>Classroom Disturbance</td>
+                                <td>Ethan Taylor, Emma Wilson</td>
+                                <td>Behavioral Contract</td>
+                                <td>Ms. Rodriguez</td>
+                            </tr>
 
-                    <!-- Incident 7 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="conflictResolutionHeading7">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#conflictResolutionCollapse7" aria-expanded="false"
-                                aria-controls="conflictResolutionCollapse7">
-                                Incident #7 - Cultural Misunderstanding
-                            </button>
-                        </h2>
-                        <div id="conflictResolutionCollapse7" class="accordion-collapse collapse"
-                            aria-labelledby="conflictResolutionHeading7" data-bs-parent="#conflictResolutionAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Date:</strong> July 15, 2023</p>
-                                <p><strong>Students:</strong> Carlos Martinez, Sophia Lee</p>
-                                <p><strong>Nature of Conflict:</strong> Cultural misunderstanding during a group
-                                    project.</p>
-                                <p><strong>Resolution:</strong> Cultural sensitivity training, facilitated discussion,
-                                    and collaborative project redo.</p>
-                            </div>
-                        </div>
-                    </div>
+                            <!-- Conflict Resolution Record 7 -->
+                            <tr>
+                                <td>7</td>
+                                <td>2024-07-01</td>
+                                <td>Sibling Conflict</td>
+                                <td>Liam Johnson, Sophia Adams</td>
+                                <td>Family Mediation</td>
+                                <td>Mr. Gomez</td>
+                            </tr>
 
-                    <!-- Incident 8 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="conflictResolutionHeading8">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#conflictResolutionCollapse8" aria-expanded="false"
-                                aria-controls="conflictResolutionCollapse8">
-                                Incident #8 - Disagreement in Student Council
-                            </button>
-                        </h2>
-                        <div id="conflictResolutionCollapse8" class="accordion-collapse collapse"
-                            aria-labelledby="conflictResolutionHeading8" data-bs-parent="#conflictResolutionAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Date:</strong> August 5, 2023</p>
-                                <p><strong>Students:</strong> Olivia Turner, Ethan White</p>
-                                <p><strong>Nature of Conflict:</strong> Disagreement over event planning in student
-                                    council.</p>
-                                <p><strong>Resolution:</strong> Mediation, collaborative event planning, and leadership
-                                    training.</p>
-                            </div>
-                        </div>
-                    </div>
+                            <!-- Conflict Resolution Record 8 -->
+                            <tr>
+                                <td>8</td>
+                                <td>2024-09-15</td>
+                                <td>Disagreement in Sports Team</td>
+                                <td>Jacob Brown, Isabella Miller</td>
+                                <td>Coach Mediation</td>
+                                <td>Ms. Johnson</td>
+                            </tr>
 
-                    <!-- Incident 9 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="conflictResolutionHeading9">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#conflictResolutionCollapse9" aria-expanded="false"
-                                aria-controls="conflictResolutionCollapse9">
-                                Incident #9 - Social Media Dispute
-                            </button>
-                        </h2>
-                        <div id="conflictResolutionCollapse9" class="accordion-collapse collapse"
-                            aria-labelledby="conflictResolutionHeading9" data-bs-parent="#conflictResolutionAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Date:</strong> September 12, 2023</p>
-                                <p><strong>Students:</strong> Mia Garcia, Noah Brown</p>
-                                <p><strong>Nature of Conflict:</strong> Dispute over social media posts.</p>
-                                <p><strong>Resolution:</strong> Mediation, social media awareness workshop, and apology.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                            <!-- Conflict Resolution Record 9 -->
+                            <tr>
+                                <td>9</td>
+                                <td>2024-11-01</td>
+                                <td>Friendship Struggle</td>
+                                <td>Christopher Turner, Ava White</td>
+                                <td>Peer Counseling</td>
+                                <td>Mr. Hernandez</td>
+                            </tr>
 
-                    <!-- Incident 10 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="conflictResolutionHeading10">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#conflictResolutionCollapse10" aria-expanded="false"
-                                aria-controls="conflictResolutionCollapse10">
-                                Incident #10 - Classroom Disruption
-                            </button>
-                        </h2>
-                        <div id="conflictResolutionCollapse10" class="accordion-collapse collapse"
-                            aria-labelledby="conflictResolutionHeading10" data-bs-parent="#conflictResolutionAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Date:</strong> October 8, 2023</p>
-                                <p><strong>Students:</strong> Jackson Wilson, Emma Turner</p>
-                                <p><strong>Nature of Conflict:</strong> Disruption during a class discussion.</p>
-                                <p><strong>Resolution:</strong> Classroom behavior agreement, counseling, and follow-up
-                                    discussion.</p>
-                            </div>
-                        </div>
-                    </div>
+                            <!-- Conflict Resolution Record 10 -->
+                            <tr>
+                                <td>10</td>
+                                <td>2025-02-15</td>
+                                <td>Dispute over Event Participation</td>
+                                <td>Mia Harris, Benjamin Taylor</td>
+                                <td>Student Mediation Committee</td>
+                                <td>Ms. Davis</td>
+                            </tr>
+
+                            <!-- Conflict Resolution Record 11 -->
+                            <tr>
+                                <td>11</td>
+                                <td>2025-05-01</td>
+                                <td>Group Project Disagreement</td>
+                                <td>Daniel Garcia, Emma Wilson</td>
+                                <td>Peer Mediation</td>
+                                <td>Ms. Rodriguez</td>
+                            </tr>
+
+                            <!-- Conflict Resolution Record 12 -->
+                            <tr>
+                                <td>12</td>
+                                <td>2025-07-15</td>
+                                <td>Dispute over Club Leadership</td>
+                                <td>Aiden Martin, Sophia Adams</td>
+                                <td>Teacher Intervention</td>
+                                <td>Mr. Thompson</td>
+                            </tr>
+
+                            <!-- Conflict Resolution Record 13 -->
+                            <tr>
+                                <td>13</td>
+                                <td>2025-09-01</td>
+                                <td>Social Media Conflict</td>
+                                <td>Olivia Robinson, Noah Brown</td>
+                                <td>Guidance Counseling</td>
+                                <td>Ms. Martinez</td>
+                            </tr>
+
+                            <!-- Conflict Resolution Record 14 -->
+                            <tr>
+                                <td>14</td>
+                                <td>2025-11-15</td>
+                                <td>Argument in Extracurricular Club</td>
+                                <td>Sophia Adams, Liam Johnson</td>
+                                <td>Behavioral Contract</td>
+                                <td>Ms. Rodriguez</td>
+                            </tr>
+
+                            <!-- Conflict Resolution Record 15 -->
+                            <tr>
+                                <td>15</td>
+                                <td>2026-02-01</td>
+                                <td>Classroom Disturbance</td>
+                                <td>Benjamin Taylor, Mia Harris</td>
+                                <td>Teacher Mediation</td>
+                                <td>Mr. Thompson</td>
+                            </tr>
+
+                            <!-- Continue adding rows for more conflict resolution records -->
+                            <!-- Conflict Resolution Record 16 -->
+                            <tr>
+                                <td>16</td>
+                                <td>2026-04-15</td>
+                                <td>Friendship Struggle</td>
+                                <td>Ava White, Christopher Turner</td>
+                                <td>Peer Counseling</td>
+                                <td>Mr. Hernandez</td>
+                            </tr>
+
+                            <!-- Conflict Resolution Record 17 -->
+                            <tr>
+                                <td>17</td>
+                                <td>2026-06-01</td>
+                                <td>Disagreement in Sports Team</td>
+                                <td>Isabella Miller, Jacob Brown</td>
+                                <td>Coach Mediation</td>
+                                <td>Ms. Johnson</td>
+                            </tr>
+
+                            <!-- Conflict Resolution Record 18 -->
+                            <tr>
+                                <td>18</td>
+                                <td>2026-08-15</td>
+                                <td>Academic Competition Dispute</td>
+                                <td>Nathan Harris, Emily Davis</td>
+                                <td>Peer Mediation</td>
+                                <td>Ms. Rodriguez</td>
+                            </tr>
+
+                            <!-- Conflict Resolution Record 19 -->
+                            <tr>
+                                <td>19</td>
+                                <td>2026-10-01</td>
+                                <td>Group Project Misunderstanding</td>
+                                <td>John Doe, Jane Smith</td>
+                                <td>Guidance Counseling</td>
+                                <td>Ms. Martinez</td>
+                            </tr>
+
+                            <!-- Conflict Resolution Record 20 -->
+                            <tr>
+                                <td>20</td>
+                                <td>2026-12-15</td>
+                                <td>Sibling Conflict</td>
+                                <td>Liam Johnson, Sophia Adams</td>
+                                <td>Family Mediation</td>
+                                <td>Mr. Gomez</td>
+                            </tr>
+
+                            <!-- Continue adding rows for more conflict resolution records -->
+                        </tbody>
+                    </table>
 
                 </div>
             </div>
+
 
         </div>
 

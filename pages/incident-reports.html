@@ -79,7 +79,8 @@
                             <ul class="sub-item">
                                 <li onclick="toggleActiveSubitem(this)"><a href="./parent-communication.html">Parent
                                         Communication</a></li>
-                                <li onclick="toggleActiveSubitem(this)"><a href="#">Staff Collaboration</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="./staff-collaboration.html">Staff
+                                        Collaboration</a></li>
                                 <li onclick="toggleActiveSubitem(this)"><a href="./student-engagement.html">Student
                                         Engagement</a></li>
                             </ul>
@@ -142,242 +143,237 @@
 
         <div class="dashboard-content">
 
-            <div class="container mt-5">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title text-primary">Incident Reports</h2>
+            <!-- Incident Reports Records -->
+            <div class="card">
+                <h2 class="card-title text-center mt-3">Incident Reports</h2>
+                <div class="card-body">
 
-                        <p class="card-text">Documenting disciplinary incidents is a critical part of maintaining a safe
-                            learning environment. Here are 10 sample incident reports:</p>
-
-                        <div class="accordion" id="incidentAccordion">
-
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Incident Type</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Actions Taken</th>
+                                <th scope="col">Staff Involved</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                             <!-- Incident Report 1 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="incidentHeading1">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#incidentCollapse1" aria-expanded="true"
-                                        aria-controls="incidentCollapse1">
-                                        Incident #1 - Bullying Incident
-                                    </button>
-                                </h2>
-                                <div id="incidentCollapse1" class="accordion-collapse collapse show"
-                                    aria-labelledby="incidentHeading1" data-bs-parent="#incidentAccordion">
-                                    <div class="accordion-body">
-                                        <strong>Date:</strong> March 10, 2023<br>
-                                        <strong>Students Involved:</strong> John Doe and Jane Smith<br>
-                                        <strong>Nature of Incident:</strong> Verbal bullying during recess.<br>
-                                        <strong>Actions Taken:</strong> Issued a verbal warning, informed parents, and
-                                        scheduled a meeting with the school counselor.
-                                    </div>
-                                </div>
-                            </div>
+                            <tr>
+                                <td>1</td>
+                                <td>2023-01-15</td>
+                                <td>Physical Altercation</td>
+                                <td>Two students involved in a physical fight during recess</td>
+                                <td>Issued warnings, counseling sessions</td>
+                                <td>Mr. Rodriguez, Ms. Gomez</td>
+                            </tr>
 
                             <!-- Incident Report 2 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="incidentHeading2">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#incidentCollapse2" aria-expanded="false"
-                                        aria-controls="incidentCollapse2">
-                                        Incident #2 - Cheating in Exam
-                                    </button>
-                                </h2>
-                                <div id="incidentCollapse2" class="accordion-collapse collapse"
-                                    aria-labelledby="incidentHeading2" data-bs-parent="#incidentAccordion">
-                                    <div class="accordion-body">
-                                        <strong>Date:</strong> April 5, 2023<br>
-                                        <strong>Student Involved:</strong> Emily Brown<br>
-                                        <strong>Nature of Incident:</strong> Caught cheating during a math exam.<br>
-                                        <strong>Actions Taken:</strong> Issued a written warning, discussed academic
-                                        integrity, and informed parents.
-                                    </div>
-                                </div>
-                            </div>
+                            <tr>
+                                <td>2</td>
+                                <td>2023-02-10</td>
+                                <td>Disruptive Behavior</td>
+                                <td>Student consistently disrupting class with loud outbursts</td>
+                                <td>Detention, parent meeting</td>
+                                <td>Ms. Hernandez</td>
+                            </tr>
 
                             <!-- Incident Report 3 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="incidentHeading3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#incidentCollapse3" aria-expanded="false"
-                                        aria-controls="incidentCollapse3">
-                                        Incident #3 - Physical Altercation
-                                    </button>
-                                </h2>
-                                <div id="incidentCollapse3" class="accordion-collapse collapse"
-                                    aria-labelledby="incidentHeading3" data-bs-parent="#incidentAccordion">
-                                    <div class="accordion-body">
-                                        <strong>Date:</strong> May 2, 2023<br>
-                                        <strong>Students Involved:</strong> Alex Johnson and Michael Wilson<br>
-                                        <strong>Nature of Incident:</strong> Physical altercation in the school
-                                        hallway.<br>
-                                        <strong>Actions Taken:</strong> Issued a suspension for both students, notified
-                                        parents, and conducted a conflict resolution session.
-                                    </div>
-                                </div>
-                            </div>
+                            <tr>
+                                <td>3</td>
+                                <td>2023-03-05</td>
+                                <td>Unauthorized Absence</td>
+                                <td>Student repeatedly skipping classes without permission</td>
+                                <td>Parent meeting, probation</td>
+                                <td>Mr. Smith</td>
+                            </tr>
 
                             <!-- Incident Report 4 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="incidentHeading4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#incidentCollapse4" aria-expanded="false"
-                                        aria-controls="incidentCollapse4">
-                                        Incident #4 - Vandalism in Classroom
-                                    </button>
-                                </h2>
-                                <div id="incidentCollapse4" class="accordion-collapse collapse"
-                                    aria-labelledby="incidentHeading4" data-bs-parent="#incidentAccordion">
-                                    <div class="accordion-body">
-                                        <strong>Date:</strong> June 15, 2023<br>
-                                        <strong>Student Involved:</strong> Olivia Garcia<br>
-                                        <strong>Nature of Incident:</strong> Vandalism in a classroom after school
-                                        hours.<br>
-                                        <strong>Actions Taken:</strong> Issued a written warning, discussed consequences
-                                        of vandalism, and involved parents in a restorative justice process.
-                                    </div>
-                                </div>
-                            </div>
+                            <tr>
+                                <td>4</td>
+                                <td>2023-04-01</td>
+                                <td>Cheating on Exam</td>
+                                <td>Student caught cheating during a final exam</td>
+                                <td>Zero on exam, academic probation</td>
+                                <td>Ms. Johnson</td>
+                            </tr>
 
                             <!-- Incident Report 5 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="incidentHeading5">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#incidentCollapse5" aria-expanded="false"
-                                        aria-controls="incidentCollapse5">
-                                        Incident #5 - Disruptive Behavior in Class
-                                    </button>
-                                </h2>
-                                <div id="incidentCollapse5" class="accordion-collapse collapse"
-                                    aria-labelledby="incidentHeading5" data-bs-parent="#incidentAccordion">
-                                    <div class="accordion-body">
-                                        <strong>Date:</strong> July 8, 2023<br>
-                                        <strong>Student Involved:</strong> William Davis<br>
-                                        <strong>Nature of Incident:</strong> Persistent disruptive behavior during a
-                                        class lecture.<br>
-                                        <strong>Actions Taken:</strong> Issued a series of warnings, involved parents in
-                                        a meeting with educators, and implemented a behavior improvement plan.
-                                    </div>
-                                </div>
-                            </div>
+                            <tr>
+                                <td>5</td>
+                                <td>2023-05-20</td>
+                                <td>Bullying</td>
+                                <td>Reported case of bullying between two students</td>
+                                <td>Anti-bullying workshop, parent meeting</td>
+                                <td>Mr. Davis, Ms. Thompson</td>
+                            </tr>
 
+                            <!-- Continue adding rows for more incident reports -->
                             <!-- Incident Report 6 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="incidentHeading6">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#incidentCollapse6" aria-expanded="false"
-                                        aria-controls="incidentCollapse6">
-                                        Incident #6 - Cyberbullying
-                                    </button>
-                                </h2>
-                                <div id="incidentCollapse6" class="accordion-collapse collapse"
-                                    aria-labelledby="incidentHeading6" data-bs-parent="#incidentAccordion">
-                                    <div class="accordion-body">
-                                        <strong>Date:</strong> August 20, 2023<br>
-                                        <strong>Students Involved:</strong> Sophia Rodriguez and Ethan Martinez<br>
-                                        <strong>Nature of Incident:</strong> Instances of cyberbullying on social media
-                                        platforms.<br>
-                                        <strong>Actions Taken:</strong> Conducted an investigation, issued warnings,
-                                        involved parents, and organized counseling sessions for both students.
-                                    </div>
-                                </div>
-                            </div>
+                            <tr>
+                                <td>6</td>
+                                <td>2023-06-15</td>
+                                <td>Vandalism</td>
+                                <td>Student caught vandalizing school property</td>
+                                <td>Community service, restitution</td>
+                                <td>Ms. Rodriguez</td>
+                            </tr>
 
                             <!-- Incident Report 7 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="incidentHeading7">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#incidentCollapse7" aria-expanded="false"
-                                        aria-controls="incidentCollapse7">
-                                        Incident #7 - Substance Abuse
-                                    </button>
-                                </h2>
-                                <div id="incidentCollapse7" class="accordion-collapse collapse"
-                                    aria-labelledby="incidentHeading7" data-bs-parent="#incidentAccordion">
-                                    <div class="accordion-body">
-                                        <strong>Date:</strong> September 12, 2023<br>
-                                        <strong>Student Involved:</strong> Isabella Moore<br>
-                                        <strong>Nature of Incident:</strong> Suspected substance abuse on school
-                                        premises.<br>
-                                        <strong>Actions Taken:</strong> Conducted a thorough investigation, involved
-                                        school counselor and parents, and implemented a substance abuse prevention
-                                        program for the student.
-                                    </div>
-                                </div>
-                            </div>
+                            <tr>
+                                <td>7</td>
+                                <td>2023-07-10</td>
+                                <td>Drug Possession</td>
+                                <td>Discovery of a student in possession of prohibited substances</td>
+                                <td>Suspension, mandatory counseling</td>
+                                <td>Mr. Martinez</td>
+                            </tr>
 
                             <!-- Incident Report 8 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="incidentHeading8">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#incidentCollapse8" aria-expanded="false"
-                                        aria-controls="incidentCollapse8">
-                                        Incident #8 - Defiance of School Policies
-                                    </button>
-                                </h2>
-                                <div id="incidentCollapse8" class="accordion-collapse collapse"
-                                    aria-labelledby="incidentHeading8" data-bs-parent="#incidentAccordion">
-                                    <div class="accordion-body">
-                                        <strong>Date:</strong> October 5, 2023<br>
-                                        <strong>Student Involved:</strong> Liam Taylor<br>
-                                        <strong>Nature of Incident:</strong> Persistent defiance of school policies and
-                                        rules.<br>
-                                        <strong>Actions Taken:</strong> Conducted counseling sessions, involved parents
-                                        in a behavior improvement plan, and closely monitored the student's behavior.
-                                    </div>
-                                </div>
-                            </div>
+                            <tr>
+                                <td>8</td>
+                                <td>2023-08-05</td>
+                                <td>Verbal Abuse</td>
+                                <td>Reported case of verbal abuse between students</td>
+                                <td>Conflict resolution session, written apology</td>
+                                <td>Ms. Gomez, Mr. Rodriguez</td>
+                            </tr>
 
                             <!-- Incident Report 9 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="incidentHeading9">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#incidentCollapse9" aria-expanded="false"
-                                        aria-controls="incidentCollapse9">
-                                        Incident #9 - Theft in School Premises
-                                    </button>
-                                </h2>
-                                <div id="incidentCollapse9" class="accordion-collapse collapse"
-                                    aria-labelledby="incidentHeading9" data-bs-parent="#incidentAccordion">
-                                    <div class="accordion-body">
-                                        <strong>Date:</strong> November 18, 2023<br>
-                                        <strong>Student Involved:</strong> Charlotte White<br>
-                                        <strong>Nature of Incident:</strong> Alleged theft of school property.<br>
-                                        <strong>Actions Taken:</strong> Conducted an investigation, involved law
-                                        enforcement, and implemented security measures to prevent future incidents.
-                                    </div>
-                                </div>
-                            </div>
+                            <tr>
+                                <td>9</td>
+                                <td>2023-09-01</td>
+                                <td>Property Damage</td>
+                                <td>Student involved in damaging school equipment</td>
+                                <td>Restitution, community service</td>
+                                <td>Ms. Thompson</td>
+                            </tr>
 
                             <!-- Incident Report 10 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="incidentHeading10">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#incidentCollapse10" aria-expanded="false"
-                                        aria-controls="incidentCollapse10">
-                                        Incident #10 - Trespassing
-                                    </button>
-                                </h2>
-                                <div id="incidentCollapse10" class="accordion-collapse collapse"
-                                    aria-labelledby="incidentHeading10" data-bs-parent="#incidentAccordion">
-                                    <div class="accordion-body">
-                                        <strong>Date:</strong> November 20, 2023<br>
-                                        <strong>Individual Involved:</strong> Jackson Adams (Non-student)<br>
-                                        <strong>Nature of Incident:</strong> Trespassing on school premises.<br>
-                                        <strong>Actions Taken:</strong> Contacted local authorities, issued a
-                                        trespassing warning, and increased security measures.
-                                    </div>
-                                </div>
-                            </div>
+                            <tr>
+                                <td>10</td>
+                                <td>2023-10-15</td>
+                                <td>Classroom Disturbance</td>
+                                <td>Student causing disruption in the classroom</td>
+                                <td>Detention, parent meeting</td>
+                                <td>Mr. Davis</td>
+                            </tr>
 
-                        </div>
-                    </div>
+                            <!-- Incident Report 11 -->
+                            <tr>
+                                <td>11</td>
+                                <td>2023-11-01</td>
+                                <td>Theft</td>
+                                <td>Reported case of theft involving a student</td>
+                                <td>Investigation, disciplinary actions</td>
+                                <td>Mr. Smith, Ms. Hernandez</td>
+                            </tr>
+
+                            <!-- Incident Report 12 -->
+                            <tr>
+                                <td>12</td>
+                                <td>2023-12-10</td>
+                                <td>Defiance of Authority</td>
+                                <td>Student refusing to follow school rules and directives</td>
+                                <td>Parent meeting, behavior contract</td>
+                                <td>Ms. Johnson</td>
+                            </tr>
+
+                            <!-- Incident Report 13 -->
+                            <tr>
+                                <td>13</td>
+                                <td>2024-01-15</td>
+                                <td>Public Disturbance</td>
+                                <td>Student involved in a disturbance during a school assembly</td>
+                                <td>Detention, community service</td>
+                                <td>Mr. Davis</td>
+                            </tr>
+
+                            <!-- Incident Report 14 -->
+                            <tr>
+                                <td>14</td>
+                                <td>2024-02-01</td>
+                                <td>Forgery</td>
+                                <td>Discovery of a forged document submitted by a student</td>
+                                <td>Academic penalty, counseling</td>
+                                <td>Ms. Thompson</td>
+                            </tr>
+
+                            <!-- Incident Report 15 -->
+                            <tr>
+                                <td>15</td>
+                                <td>2024-03-10</td>
+                                <td>Harassment</td>
+                                <td>Reported case of harassment between students</td>
+                                <td>Mediation, counseling</td>
+                                <td>Mr. Rodriguez, Ms. Gomez</td>
+                            </tr>
+
+                            <!-- Continue adding rows for more incident reports -->
+                            <!-- Incident Report 16 -->
+                            <tr>
+                                <td>16</td>
+                                <td>2024-04-05</td>
+                                <td>Unauthorized Access</td>
+                                <td>Student accessing restricted areas without permission</td>
+                                <td>Warning, parent meeting</td>
+                                <td>Mr. Smith</td>
+                            </tr>
+
+                            <!-- Incident Report 17 -->
+                            <tr>
+                                <td>17</td>
+                                <td>2024-05-20</td>
+                                <td>Social Media Misuse</td>
+                                <td>Improper use of social media causing disruption</td>
+                                <td>Education on responsible social media use</td>
+                                <td>Ms. Hernandez</td>
+                            </tr>
+
+                            <!-- Incident Report 18 -->
+                            <tr>
+                                <td>18</td>
+                                <td>2024-06-15</td>
+                                <td>Public Intoxication</td>
+                                <td>Student found intoxicated during a school event</td>
+                                <td>Suspension, mandatory counseling</td>
+                                <td>Mr. Davis, Ms. Thompson</td>
+                            </tr>
+
+                            <!-- Incident Report 19 -->
+                            <tr>
+                                <td>19</td>
+                                <td>2024-07-10</td>
+                                <td>Insubordination</td>
+                                <td>Student refusing to follow instructions from school staff</td>
+                                <td>Detention, behavior contract</td>
+                                <td>Ms. Johnson</td>
+                            </tr>
+
+                            <!-- Incident Report 20 -->
+                            <tr>
+                                <td>20</td>
+                                <td>2024-08-05</td>
+                                <td>Technology Violation</td>
+                                <td>Unauthorized use of school technology resources</td>
+                                <td>Loss of technology privileges, counseling</td>
+                                <td>Mr. Smith, Ms. Hernandez</td>
+                            </tr>
+
+                            <!-- Continue adding rows for more incident reports -->
+                        </tbody>
+                    </table>
 
                 </div>
-
             </div>
 
-            <script src="../scripts/main.js"></script>
-            <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+        </div>
+
+        <script src="../scripts/main.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 
 </html>

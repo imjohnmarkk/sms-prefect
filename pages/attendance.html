@@ -79,7 +79,8 @@
                             <ul class="sub-item">
                                 <li onclick="toggleActiveSubitem(this)"><a href="./parent-communication.html">Parent
                                         Communication</a></li>
-                                <li onclick="toggleActiveSubitem(this)"><a href="#">Staff Collaboration</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="./staff-collaboration.html">Staff
+                                        Collaboration</a></li>
                                 <li onclick="toggleActiveSubitem(this)"><a href="./student-engagement.html">Student
                                         Engagement</a></li>
                             </ul>
@@ -114,8 +115,10 @@
                             <ul class="sub-item">
                                 <li onclick="toggleActiveSubitem(this)"><a href="./incident-reports.html">Incident
                                         Reports</a></li>
-                                <li onclick="toggleActiveSubitem(this)"><a href="./progress-tracking.html">Progress Tracking</a></li>
-                                <li onclick="toggleActiveSubitem(this)"><a href="./data-analysis.html">Data Analysis</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="./progress-tracking.html">Progress
+                                        Tracking</a></li>
+                                <li onclick="toggleActiveSubitem(this)"><a href="./data-analysis.html">Data Analysis</a>
+                                </li>
                             </ul>
 
                             <li class="item" onclick="toggleActive(this)">Positive Reinforcement
@@ -140,127 +143,233 @@
 
         <div class="dashboard-content">
 
+            <!-- Attendance Records -->
             <div class="card">
-                <h2 class="card-title text-center">Attendance Monitoring</h2>
-        
-                <div class="table-responsive">
-                    <table class="table table-bordered">
+                <h2 class="card-title text-center mt-3">Attendance Records</h2>
+                <div class="card-body">
+
+                    <table class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Date</th>
-                                <th>Student Name</th>
-                                <th>Attendance Status</th>
+                                <th scope="col">#</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Absentee</th>
+                                <th scope="col">Reason</th>
+                                <th scope="col">Action Taken</th>
+                                <th scope="col">Teacher</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- Student 1-5 -->
+                            <!-- Attendance Record 1 -->
                             <tr>
-                                <td>2023-01-05</td>
+                                <td>1</td>
+                                <td>2023-05-01</td>
                                 <td>John Doe</td>
-                                <td>Present</td>
+                                <td>Illness</td>
+                                <td>Parent Notification</td>
+                                <td>Ms. Johnson</td>
                             </tr>
+
+                            <!-- Attendance Record 2 -->
                             <tr>
-                                <td>2023-01-05</td>
-                                <td>Jane Smith</td>
-                                <td>Absent</td>
+                                <td>2</td>
+                                <td>2023-07-15</td>
+                                <td>Alice Brown</td>
+                                <td>Family Emergency</td>
+                                <td>Attendance Contract</td>
+                                <td>Mr. Hernandez</td>
                             </tr>
+
+                            <!-- Attendance Record 3 -->
                             <tr>
-                                <td>2023-01-06</td>
-                                <td>Alex Johnson</td>
-                                <td>Present</td>
+                                <td>3</td>
+                                <td>2023-09-01</td>
+                                <td>Sarah White</td>
+                                <td>Doctor's Appointment</td>
+                                <td>Excused Absence</td>
+                                <td>Ms. Davis</td>
                             </tr>
+
+                            <!-- Attendance Record 4 -->
                             <tr>
-                                <td>2023-01-06</td>
-                                <td>Emily Davis</td>
-                                <td>Present</td>
+                                <td>4</td>
+                                <td>2024-01-15</td>
+                                <td>Michael Turner</td>
+                                <td>Transportation Issues</td>
+                                <td>Attendance Warning</td>
+                                <td>Mr. Thompson</td>
                             </tr>
+
+                            <!-- Attendance Record 5 -->
                             <tr>
-                                <td>2023-01-10</td>
-                                <td>Noah Miller</td>
-                                <td>Absent</td>
+                                <td>5</td>
+                                <td>2024-03-01</td>
+                                <td>Nathan Harris</td>
+                                <td>Family Vacation</td>
+                                <td>Makeup Assignments</td>
+                                <td>Ms. Martinez</td>
                             </tr>
-                            <!-- Student 6-10 -->
+
+                            <!-- Continue adding rows for more attendance records -->
+                            <!-- Attendance Record 6 -->
                             <tr>
-                                <td>2023-01-10</td>
-                                <td>Olivia Wilson</td>
-                                <td>Present</td>
+                                <td>6</td>
+                                <td>2024-05-15</td>
+                                <td>Ethan Taylor</td>
+                                <td>Unexcused Tardiness</td>
+                                <td>Detention</td>
+                                <td>Ms. Rodriguez</td>
                             </tr>
+
+                            <!-- Attendance Record 7 -->
                             <tr>
-                                <td>2023-01-12</td>
-                                <td>Liam Brown</td>
-                                <td>Present</td>
+                                <td>7</td>
+                                <td>2024-07-01</td>
+                                <td>Liam Johnson</td>
+                                <td>Missed Bus</td>
+                                <td>Parent Notification</td>
+                                <td>Mr. Gomez</td>
                             </tr>
+
+                            <!-- Attendance Record 8 -->
                             <tr>
-                                <td>2023-01-12</td>
-                                <td>Sophia Taylor</td>
-                                <td>Absent</td>
+                                <td>8</td>
+                                <td>2024-09-15</td>
+                                <td>Jacob Brown</td>
+                                <td>Unexcused Absence</td>
+                                <td>Attendance Contract</td>
+                                <td>Ms. Johnson</td>
                             </tr>
+
+                            <!-- Attendance Record 9 -->
                             <tr>
-                                <td>2023-01-15</td>
-                                <td>Mason Anderson</td>
-                                <td>Present</td>
+                                <td>9</td>
+                                <td>2024-11-01</td>
+                                <td>Christopher Turner</td>
+                                <td>Car Trouble</td>
+                                <td>Excused Absence</td>
+                                <td>Mr. Hernandez</td>
                             </tr>
+
+                            <!-- Attendance Record 10 -->
                             <tr>
-                                <td>2023-01-15</td>
-                                <td>Emma White</td>
-                                <td>Present</td>
+                                <td>10</td>
+                                <td>2025-02-15</td>
+                                <td>Mia Harris</td>
+                                <td>Doctor's Appointment</td>
+                                <td>Makeup Assignments</td>
+                                <td>Ms. Davis</td>
                             </tr>
-                            <!-- Student 11-15 -->
+
+                            <!-- Attendance Record 11 -->
                             <tr>
-                                <td>2023-01-18</td>
-                                <td>Lucas Martinez</td>
-                                <td>Absent</td>
+                                <td>11</td>
+                                <td>2025-05-01</td>
+                                <td>Daniel Garcia</td>
+                                <td>Unexcused Tardiness</td>
+                                <td>Detention</td>
+                                <td>Ms. Rodriguez</td>
                             </tr>
+
+                            <!-- Attendance Record 12 -->
                             <tr>
-                                <td>2023-01-18</td>
-                                <td>Ava Harris</td>
-                                <td>Present</td>
+                                <td>12</td>
+                                <td>2025-07-15</td>
+                                <td>Aiden Martin</td>
+                                <td>Missed Bus</td>
+                                <td>Parent Notification</td>
+                                <td>Mr. Thompson</td>
                             </tr>
+
+                            <!-- Attendance Record 13 -->
                             <tr>
-                                <td>2023-01-20</td>
-                                <td>Logan Jackson</td>
-                                <td>Present</td>
+                                <td>13</td>
+                                <td>2025-09-01</td>
+                                <td>Olivia Robinson</td>
+                                <td>Family Emergency</td>
+                                <td>Attendance Contract</td>
+                                <td>Ms. Martinez</td>
                             </tr>
+
+                            <!-- Attendance Record 14 -->
                             <tr>
-                                <td>2023-01-20</td>
-                                <td>Isabella Clark</td>
-                                <td>Absent</td>
+                                <td>14</td>
+                                <td>2025-11-15</td>
+                                <td>Sophia Adams</td>
+                                <td>Doctor's Appointment</td>
+                                <td>Makeup Assignments</td>
+                                <td>Ms. Rodriguez</td>
                             </tr>
+
+                            <!-- Attendance Record 15 -->
                             <tr>
-                                <td>2023-01-25</td>
-                                <td>Carter Lee</td>
-                                <td>Present</td>
+                                <td>15</td>
+                                <td>2026-02-01</td>
+                                <td>Benjamin Taylor</td>
+                                <td>Unexcused Absence</td>
+                                <td>Attendance Contract</td>
+                                <td>Mr. Thompson</td>
                             </tr>
-                            <!-- Student 16-20 -->
+
+                            <!-- Continue adding rows for more attendance records -->
+                            <!-- Attendance Record 16 -->
                             <tr>
-                                <td>2023-01-25</td>
-                                <td>Sofia Garcia</td>
-                                <td>Present</td>
+                                <td>16</td>
+                                <td>2026-04-15</td>
+                                <td>Ava White</td>
+                                <td>Car Trouble</td>
+                                <td>Excused Absence</td>
+                                <td>Ms. Johnson</td>
                             </tr>
+
+                            <!-- Attendance Record 17 -->
                             <tr>
-                                <td>2023-01-28</td>
-                                <td>Ethan Turner</td>
-                                <td>Absent</td>
+                                <td>17</td>
+                                <td>2026-06-01</td>
+                                <td>Isabella Miller</td>
+                                <td>Unexcused Tardiness</td>
+                                <td>Detention</td>
+                                <td>Mr. Hernandez</td>
                             </tr>
+
+                            <!-- Attendance Record 18 -->
                             <tr>
-                                <td>2023-01-28</td>
-                                <td>Madison Baker</td>
-                                <td>Present</td>
+                                <td>18</td>
+                                <td>2026-08-15</td>
+                                <td>Nathan Harris</td>
+                                <td>Missed Bus</td>
+                                <td>Parent Notification</td>
+                                <td>Ms. Rodriguez</td>
                             </tr>
+
+                            <!-- Attendance Record 19 -->
                             <tr>
-                                <td>2023-01-30</td>
-                                <td>Aiden Hill</td>
-                                <td>Present</td>
+                                <td>19</td>
+                                <td>2026-10-01</td>
+                                <td>John Doe</td>
+                                <td>Unexcused Tardiness</td>
+                                <td>Detention</td>
+                                <td>Ms. Martinez</td>
                             </tr>
+
+                            <!-- Attendance Record 20 -->
                             <tr>
-                                <td>2023-01-30</td>
-                                <td>Chloe Reed</td>
-                                <td>Absent</td>
+                                <td>20</td>
+                                <td>2026-12-15</td>
+                                <td>Liam Johnson</td>
+                                <td>Family Vacation</td>
+                                <td>Makeup Assignments</td>
+                                <td>Mr. Gomez</td>
                             </tr>
+
+
+                            <!-- Continue adding rows for more attendance records -->
                         </tbody>
                     </table>
+
                 </div>
             </div>
+
 
         </div>
 
