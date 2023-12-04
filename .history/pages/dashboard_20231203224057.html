@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/css/style.css" rel="stylesheet" />
+    <link
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <nav>
+        <div class="navbar">
+          <div class="navbar-content">
+            <div class="close-btn">
+              <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class="open-btn">
+              <span class="material-symbols-outlined">menu</span>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar-content">
+            <div class="sidebar-logo">
+              <a href="#">
+                <img src="../images/logo.png" alt="Logo" />
+                <strong>
+                  <span>PREFECT</span>
+                </strong>
+              </a>
+            </div>
+            <hr />
+            <div class="submodule">
+              <ul>
+                <li class="item" onclick="toggleActive(this)">
+                  <a href="./dashboard.html">Dashboard</a>
+                </li>
+                <li class="item" onclick="toggleActive(this)">
+                  Student Discipline
+                  <span class="material-symbols-outlined">chevron_right</span>
+                </li>
+                <ul class="sub-item">
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./behavioral-management.html">
+                      Behavioral Management
+                    </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./conflict-resolution.html">
+                      Conflict Resolution
+                    </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./rule-enforcement.html"> Rule Enforcement </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./counseling.html">Counseling</a>
+                  </li>
+                </ul>
+                <li class="item" onclick="toggleActive(this)">
+                  Classroom Monitoring
+                  <span class="material-symbols-outlined">chevron_right</span>
+                </li>
+                <ul class="sub-item">
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./attendance.html">Attendance</a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./classroom-behavior.html"> Classroom Behavior </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./teacher-support.html"> Teacher Support </a>
+                  </li>
+                </ul>
+                <li class="item" onclick="toggleActive(this)">
+                  School Events and Activities
+                  <span class="material-symbols-outlined">chevron_right</span>
+                </li>
+                <ul class="sub-item">
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./event-supervision.html"> Event Supervision </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./activity-participation.html">
+                      Activity Participation
+                    </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./security.html">Security</a>
+                  </li>
+                </ul>
+                <li class="item" onclick="toggleActive(this)">
+                  Communication and Collaboration
+                  <span class="material-symbols-outlined">chevron_right</span>
+                </li>
+                <ul class="sub-item">
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./parent-communication.html">
+                      Parent Communication
+                    </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./staff-collaboration.html">
+                      Staff Collaboration
+                    </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./student-engagement.html"> Student Engagement </a>
+                  </li>
+                </ul>
+                <li class="item" onclick="toggleActive(this)">
+                  Crisis Management
+                  <span class="material-symbols-outlined">chevron_right</span>
+                </li>
+                <ul class="sub-item">
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./emergency-response.html"> Emergency Response </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./conflict-mediation.html"> Conflict Mediation </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./policy-development.html"> Policy Development </a>
+                  </li>
+                </ul>
+                <li class="item" onclick="toggleActive(this)">
+                  Training and Education
+                  <span class="material-symbols-outlined">chevron_right</span>
+                </li>
+                <ul class="sub-item">
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./student-workshops.html"> Student Workshops </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./staff-training.html"> Staff Training </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./peer-mentoring.html"> Peer Mentoring </a>
+                  </li>
+                </ul>
+                <li class="item" onclick="toggleActive(this)">
+                  Record Keeping and Reporting
+                  <span class="material-symbols-outlined">chevron_right</span>
+                </li>
+                <ul class="sub-item">
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./incident-reports.html"> Incident Reports </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./progress-tracking.html"> Progress Tracking </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./data-analysis.html"> Data Analysis </a>
+                  </li>
+                </ul>
+                <li class="item" onclick="toggleActive(this)">
+                  Positive Reinforcement
+                  <span class="material-symbols-outlined">chevron_right</span>
+                </li>
+                <ul class="sub-item">
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./recognition-program.html">
+                      Recognition Programs
+                    </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./character-education.html">
+                      Character Education
+                    </a>
+                  </li>
+                  <li onclick="toggleActiveSubitem(this)">
+                    <a href="./community-engagement.html">
+                      Community Engagement
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="dashboard-content">
+        <div class="card-group">
+            <div class="card">
+                <img src="../resume/John Mark/images/profile.jpg" class="card-img-top" alt="John Mark">
+                <div class="card-body">
+                    <h5 class="card-title">Leader</h5>
+                    <p class="card-text">Wazzup Mother Fucker</p>
+                    <a href="../resume/John Mark/index.html" class="btn btn-primary">My Resume</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../resume/Gajo, Danica Rose G. /Anya Forger.jpeg" class="card-img-top" alt="Danica">
+                <div class="card-body">
+                    <h5 class="card-title">Member</h5>
+                    <p class="card-text">Wazzup Mother Fucker</p>
+                    <a href="../resume/Gajo, Danica Rose G. /danica.html" class="btn btn-primary">My Resume</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../resume/khent/image/image.jpg" class="card-img-top" alt="Khent">
+                <div class="card-body">
+                    <h5 class="card-title">Member</h5>
+                    <p class="card-text">Wazzup Mother Fucker</p>
+                    <a href="../resume/khent/index.html" class="btn btn-primary">My Resume</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../resume/John Mark/images/profile.jpg" class="card-img-top" alt="John Mark">
+                <div class="card-body">
+                    <h5 class="card-title">Leader</h5>
+                    <p class="card-text">Wazzup Mother Fucker</p>
+                    <a href="../resume/John Mark/index.html" class="btn btn-primary">My Resume</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group">
+            <div class="card">
+                <img src="../resume/Daryl/daryl.jpg" class="card-img-top" alt="John Mark">
+                <div class="card-body">
+                    <h5 class="card-title">Leader</h5>
+                    <p class="card-text">Wazzup Mother Fucker</p>
+                    <a href="../resume/" class="btn btn-primary">My Resume</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../resume/Giray, John Marvic/Our baldy is ready _ Johnny Sins.jpeg" class="card-img-top" alt="John Mark">
+                <div class="card-body">
+                    <h5 class="card-title">Member</h5>
+                    <p class="card-text">Wazzup Mother Fucker</p>
+                    <a href="../resume/Giray, John Marvic/personal resume.html" class="btn btn-primary">My Resume</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../resume/Galit,Nico/_.jpeg" class="card-img-top" alt="Nico Galit">
+                <div class="card-body">
+                    <h5 class="card-title">Member</h5>
+                    <p class="card-text">Wazzup Mother Fucker</p>
+                    <a href="../resume/Galit,Nico/html.nick.html" class="btn btn-primary">My Resume</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../resume/Moral/" class="card-img-top" alt="Rosly Moral">
+                <div class="card-body">
+                    <h5 class="card-title">Member</h5>
+                    <p class="card-text">Wazzup Mother Fucker</p>
+                    <a href="../resume/Moral/resume.1.html" class="btn btn-primary">My Resume</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="../scripts/main.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
