@@ -1,0 +1,191 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', 'Arial Narrow';
+}
+body{
+    background: #89cfef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+.container .left_Side{
+    position: relative;
+    background: #004860;
+    padding: 40px;
+}
+.ProfileText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(255,255,255,0.2);
+}
+.ProfileText .ingBox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ProfileText .ingBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contactInfo{
+    padding-top: 40px;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #00d8d8;
+}
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 100;
+}
+.container .education li{
+    margin-bottom: 15px;
+}
+.container .education h5{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.container .education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+.container .education h4{
+    color: #fff;
+    font-weight: 500;
+}
+.container .experties .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+.container .experties .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.container .language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+.container .language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.container .rigth_Side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.container .rigth_Side h1{
+    color: black;
+    font-size: 2em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+.container .rigth_Side h1 span{
+    font-size: 1em;
+    font-weight: 400;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #083147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}   
+p{
+    padding: 20px;
+    color: #333;
+}
+.box {
+    padding: 20px;
+}
+.box ul{
+    position: relative;
+}
+.box ul li{
+    position: relative;
+    list-style: none;
+    margin-top: 5px 0;
+    cursor: pointer;
+}
+.box ul li span{
+    position: relative;
+    list-style: none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.box ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #00d8d8;
+}
+.box ul li span{
+    color: #000000;
+    font-weight: 100;
+    
+}
