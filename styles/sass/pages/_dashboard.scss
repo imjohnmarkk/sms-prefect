@@ -180,5 +180,38 @@ ul.sub-item {
 }
 
 ul.sub-item.expand {
-  max-height: 500px; /* Adjust the max-height value to a sufficiently large value */
+  max-height: 500px; 
+}
+
+.sidebar-content {
+  position: relative;
+  height: 100%;
+}
+
+.logout-container {
+  width: 80%;
+  margin: 0 0 0 30px;
+  padding: 5px 8px;
+  font-size: 18px;
+  background: $primary-blue;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+
+.logout-container .logout {
+  text-decoration: none;
+  color: white;
+  margin: 0 0 0 -80px;
+}
+
+.logout-container span {
+  color: white;
 }

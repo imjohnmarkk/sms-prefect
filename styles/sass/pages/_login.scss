@@ -12,7 +12,6 @@
 }
 
 .main-login-container .main-login-content {
-  //border: 2px solid red;
   height: 60%;
   width: 60%;
   background: #5a77df;
@@ -28,7 +27,6 @@
 }
 
 .login-container {
-  //border: 2px solid red;
   position: absolute;
   left: 100px;
   height: 700px;
@@ -89,7 +87,7 @@
 
   &:focus {
     border: none;
-    outline: 1px solid #87C4FF;
+    outline: 1px solid #87c4ff;
   }
 }
 
@@ -123,7 +121,6 @@
 }
 
 .logo-container {
-  //border: 2px solid red;
   height: 100%;
   width: 45%;
   position: absolute;
@@ -142,7 +139,9 @@
 
 .tagline {
   color: white;
-  margin: 0 50px;
+  margin: 0 40px 0 0;
+  font-size: 24px;
+  font-family: "Dancing Script", cursive;
 }
 
 .circle__1 {
